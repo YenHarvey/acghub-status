@@ -44,7 +44,7 @@ export const getSiteData = async (apikey, days, cache, status) => {
           const delay = Math.floor(Math.random() * (1200 - 500 + 1)) + 500;
           setTimeout(() => {
             const processedData = dataProcessing(data, dates);
-            console.log("触发缓存");
+            // console.log("触发缓存");
             changeSite(processedData, status);
             resolve(processedData);
           }, delay);

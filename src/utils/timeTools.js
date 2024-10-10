@@ -18,9 +18,9 @@ export const formatDuration = (seconds) => {
   const s = seconds % 60;
 
   const parts = [];
-  if (h > 0) parts.push(`${h} 小时`);
-  if (m > 0) parts.push(`${m} 分`);
-  if (s > 0) parts.push(`${s} 秒`);
+  if (h > 0) parts.push(`${h} h`);
+  if (m > 0) parts.push(`${m} min`);
+  if (s > 0) parts.push(`${s} s`);
 
   return parts.join(" ");
 };

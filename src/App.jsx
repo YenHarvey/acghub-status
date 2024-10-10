@@ -19,7 +19,7 @@ const App = observer(() => {
   const getSiteStatusData = () => {
     setSiteData(null);
     getSiteData(apiKey, countDays, cache, status).then((res) => {
-      console.log(res);
+      // console.log(res);
       setSiteData(res);
     });
   };
